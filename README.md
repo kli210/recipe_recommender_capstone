@@ -1,13 +1,12 @@
 # Recipe Recommender
 ## To-do list:
   - [X] Data cleaning
-  - [X] Data preprocessing (partial)
+  - [X] Data preprocessing
   - [ ] Basic EDA
   - [ ] Model selection
-  - [ ] Data preprocessing (full)
 
 ## Goal: 4 notebooks
-  - [X] Data Preprocessing
+  - [X] Data Preprocessing & Initial EDA
   - [ ] EDA and Visualizations
   - [ ] Modelling
   - [ ] Model Evaluation
