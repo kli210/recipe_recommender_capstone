@@ -2,13 +2,15 @@
 ## To-do list:
   - [X] Data cleaning
   - [X] Data preprocessing
-  - [ ] Basic EDA
-  - [ ] Model selection
+  - [X] Basic EDA
+  - [X] Model selection
+  - [X] Initial modelling
+  - [ ] Advanced modelling
 
 ## Goal: 4 notebooks
   - [X] Data Preprocessing & Initial EDA
-  - [ ] EDA and Visualizations
-  - [ ] Modelling
+  - [X] EDA and Visualizations
+  - [ ] Modelling --> in progress
   - [ ] Model Evaluation
 
 ## Introduction
