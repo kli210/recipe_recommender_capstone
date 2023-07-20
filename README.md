@@ -6,6 +6,9 @@
   - [X] Model selection
   - [X] Initial modelling
   - [ ] Advanced modelling
+    - [ ] Implement FunkSVD
+  - [ ] UI/UX?
+  
 
 ## Goal: 4 notebooks
   - [X] Data Preprocessing & Initial EDA
