@@ -7,7 +7,8 @@
   - [X] Initial modelling
   - [ ] Advanced modelling
     - [ ] Implement FunkSVD
-  - [ ] UI/UX?
+  - [ ] Deploy models
+  - [ ] Frontend dev
   
 
 ## Goal: 4 notebooks
