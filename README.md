@@ -14,7 +14,8 @@
 ## Goal: 4 notebooks
   - [X] Data Preprocessing & Initial EDA
   - [X] EDA and Visualizations
-  - [ ] Modelling --> in progress
+  - [X] Modelling --> in progress
+  - [ ] Advanced Modelling
   - [ ] Model Evaluation
 
 ## Introduction
