@@ -6,8 +6,9 @@
   - [X] Model selection
   - [X] Initial modelling
   - [ ] Advanced modelling
-    - [ ] Implement FunkSVD
+    - [ ] Implement FunkSVD --> 'Next Step'
   - [ ] Deploy models
+    - [ ] Streamlit
   - [ ] Frontend dev
   
 
