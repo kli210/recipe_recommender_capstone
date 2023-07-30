@@ -82,23 +82,37 @@ def load_data(url):
 sampled_data = load_data("sampled_data.pkl")
 
 # Define the app title and description
-st.title('Recipe Recommender :pancakes:')
-st.write("Now we're cooking.")
+st.title('TastyFinds :pancakes:')
+st.write("Discover exciting new recipes tailored to your cravings and ingredients! Whether you're seeking inspiration or a delightful surprise, my ML-powered app will scour through 53,000+ recipes to find your perfect match. Don't let those ingredients go to waste — unleash your culinary creativity now! :arrow_down:")
 
 
 # User input
-user_input = st.text_input('What are you craving?')
+user_input = st.text_input("Craving something delicious? Spill the beans, and let's cook up a storm!")
+
+# Function to convert list of ingredients to comma-separated string
+def format_ingredients(ingredients_list):
+    # Remove the brackets and single quotes
+    return ingredients_list.replace("[", "").replace("]", "").replace("'", "")
+
 
 if st.button('Get Recommendations'):
+    # Add loading screen
+    loading_screen = st.image('cooking.gif')
     # Get recommendations based on user input
     recommended_recipes = find_similar_recipes(sampled_data, user_input, num_similar=5)
     
+    # Remove loading screen
+    loading_screen.empty()
+    
     # Get the selected recipes from the sampled_data DataFrame
-    selected_recipes = sampled_data.loc[sampled_data['name'].isin(recommended_recipes), ['name', 'description', 'ingredients']]
+    selected_recipes = sampled_data.loc[sampled_data['name'].isin(recommended_recipes), ['name', 'ingredients']]
 
     # Reset the index of selected_recipes to start from 1
     selected_recipes.reset_index(drop=True, inplace=True)
     selected_recipes.index += 1
+    
+    # Convert the list of ingredients into a comma-separated string
+    selected_recipes['ingredients'] = selected_recipes['ingredients'].apply(format_ingredients)
 
     # Display the similar recipes in a table
     st.header('Recommended Recipes')
