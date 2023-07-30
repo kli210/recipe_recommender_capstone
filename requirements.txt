@@ -1,0 +1,13 @@
+gensim @ file:///C:/b/abs_a5vat69tv8/croot/gensim_1674853640591/work
+joblib @ file:///C:/b/abs_1anqjntpan/croot/joblib_1685113317150/work
+matplotlib @ file:///C:/b/abs_49b2acwxd4/croot/matplotlib-suite_1679593486357/work
+matplotlib-inline @ file:///C:/ci/matplotlib-inline_1661934035815/work
+nltk @ file:///home/conda/feedstock_root/build_artifacts/nltk_1672696305909/work
+numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
+pandas @ file:///C:/b/abs_b9kefbuby2/croot/pandas_1677835593760/work
+scikit-learn @ file:///C:/ci/scikit-learn_1614446896245/work
+scikit-surprise==1.1.1
+scipy==1.10.1
+seaborn @ file:///C:/b/abs_68ltdkoyoo/croot/seaborn_1673479199997/work
+streamlit==1.25.0
+wordcloud @ file:///C:/b/abs_66ccn47hik/croot/wordcloud_1687301655958/work
