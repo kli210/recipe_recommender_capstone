@@ -15,7 +15,7 @@ from nltk.corpus import stopwords
 stemmer = nltk.stem.PorterStemmer()
 ENGLISH_STOP_WORDS = stopwords.words('english')
 
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def recipe_tokenizer(sentence):
     # remove punctuation and set to lower case
     for punctuation_mark in string.punctuation:
@@ -35,7 +35,7 @@ def recipe_tokenizer(sentence):
     return listofstemmed_words
 
 # Function to load the combined embeddings and TF-IDF vectorizer model
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def load_embeddings_and_vectorizer():
     with open('combined_embeddings.pkl', 'rb') as f:
         combined_embeddings = pickle.load(f)
@@ -44,7 +44,7 @@ def load_embeddings_and_vectorizer():
     return combined_embeddings, vectorizer
 
 # Function for finding recipes
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def find_similar_recipes(sampled_data, user_input, num_similar=5):
     combined_embeddings, vectorizer = load_embeddings_and_vectorizer()
 
@@ -74,7 +74,7 @@ def find_similar_recipes(sampled_data, user_input, num_similar=5):
     return similar_recipe_names
 
 # Function for loading data
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def load_data(url):
     df = pd.read_pickle(url)
     return df
@@ -83,7 +83,8 @@ sampled_data = load_data("sampled_data.pkl")
 
 # Define the app title and description
 st.title('TastyFinds :pancakes:')
-st.write("Discover exciting new recipes tailored to your cravings and ingredients! Whether you're seeking inspiration or a delightful surprise, my ML-powered app will scour through 53,000+ recipes to find your perfect match. Don't let those ingredients go to waste — unleash your culinary creativity now! :arrow_down:")
+st.write('**Cooked up by Kelly Li**')
+st.write("Discover exciting new recipes tailored to your cravings and ingredients! Whether you're seeking inspiration or a delightful surprise, this ML-powered app will scour through 53,000+ recipes to find your perfect match. Don't let those ingredients go to waste — unleash your culinary creativity now! :arrow_down:")
 
 
 # User input
@@ -95,9 +96,11 @@ def format_ingredients(ingredients_list):
     return ingredients_list.replace("[", "").replace("]", "").replace("'", "")
 
 
-if st.button('Get Recommendations'):
+if st.button('Get Recommendations!'):
+    
     # Add loading screen
-    loading_screen = st.image('cooking.gif')
+    loading_screen = st.image('cooking.gif', caption="Picking out deliciousness...")
+    
     # Get recommendations based on user input
     recommended_recipes = find_similar_recipes(sampled_data, user_input, num_similar=5)
     
@@ -115,5 +118,4 @@ if st.button('Get Recommendations'):
     selected_recipes['ingredients'] = selected_recipes['ingredients'].apply(format_ingredients)
 
     # Display the similar recipes in a table
-    st.header('Recommended Recipes')
     st.table(selected_recipes)
