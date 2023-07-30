@@ -73,8 +73,13 @@ def find_similar_recipes(sampled_data, user_input, num_similar=5):
 
     return similar_recipe_names
 
-# Load data
-sampled_data = pd.read_pickle("sampled_data.pkl")
+# Function for loading data
+@st.cache_data
+def load_data(url):
+    df = pd.read_pickle(url)
+    return df
+
+sampled_data = load_data("sampled_data.pkl")
 
 # Define the app title and description
 st.title('Recipe Recommender :pancakes:')
