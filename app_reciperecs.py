@@ -85,7 +85,7 @@ sampled_data = load_data("sampled_data.pkl")
 st.title('TastyFinds :pancakes:')
 st.write('**Cooked up by Kelly Li**')
 st.write("Discover exciting new recipes tailored to your cravings and ingredients! Whether you're seeking inspiration or a delightful surprise, this ML-powered app will scour through 53,000+ recipes to find your perfect match. Don't let those ingredients go to waste — unleash your culinary creativity now! :arrow_down:")
-
+st.divider()
 
 # User input
 user_input = st.text_input("Craving something delicious? Spill the beans, and let's cook up a storm!")
