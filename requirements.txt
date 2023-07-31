@@ -1,3 +1,4 @@
+gensim==4.3.0
 joblib==1.2.0
 matplotlib==3.7.1
 nltk==3.8.1
