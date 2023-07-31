@@ -1,4 +1,3 @@
-gensim @ file:///C:/b/abs_a5vat69tv8/croot/gensim_1674853640591/work
 joblib @ file:///C:/b/abs_1anqjntpan/croot/joblib_1685113317150/work
 matplotlib @ file:///C:/b/abs_49b2acwxd4/croot/matplotlib-suite_1679593486357/work
 matplotlib-inline @ file:///C:/ci/matplotlib-inline_1661934035815/work
