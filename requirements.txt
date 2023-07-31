@@ -1,14 +1,10 @@
-joblib @ file:///C:/b/abs_1anqjntpan/croot/joblib_1685113317150/work
-matplotlib @ file:///C:/b/abs_49b2acwxd4/croot/matplotlib-suite_1679593486357/work
-matplotlib-inline @ file:///C:/ci/matplotlib-inline_1661934035815/work
-nltk @ file:///home/conda/feedstock_root/build_artifacts/nltk_1672696305909/work
-numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
-packaging @ file:///C:/b/abs_ed_kb9w6g4/croot/packaging_1678965418855/work
-pandas @ file:///C:/b/abs_b9kefbuby2/croot/pandas_1677835593760/work
-pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
-scikit-learn
+joblib==1.2.0
+matplotlib==3.7.1
+nltk==3.8.1
+numpy==1.24.3
+pandas==1.5.3
+scikit-learn==0.24.1
 scikit-surprise==1.1.1
 scipy==1.10.1
-seaborn @ file:///C:/b/abs_68ltdkoyoo/croot/seaborn_1673479199997/work
 streamlit==1.25.0
 
