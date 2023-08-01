@@ -1,23 +1,21 @@
-# Recipe Recommender
-## To-do list:
-  - [X] Data cleaning
-  - [X] Data preprocessing
-  - [X] Basic EDA
-  - [X] Model selection
-  - [X] Initial modelling
-  - [ ] Advanced modelling
-    - [ ] Implement FunkSVD --> 'Next Step'
-  - [ ] Deploy models
-    - [ ] Streamlit
-  - [ ] Frontend dev
-  
+# Project: Recipe Recommender System: TastyFinds
 
-## Goal: 4 notebooks
-  - [X] Data Preprocessing & Initial EDA
-  - [X] EDA and Visualizations
-  - [X] Modelling --> in progress
-  - [ ] Advanced Modelling
-  - [ ] Model Evaluation
+## Description
+This project aims to develop a recipe recommender system that provides users with personalized cooking inspirations based on their cravings and available ingredients. The system utilizes data science techniques to analyze a vast collection of recipes and user interactions from Food.com, spanning 18 years.
 
-## Introduction
-Our recipe recommendation system utilizes advanced machine learning and natural language processing techniques to provide personalized recipe suggestions to users. By analyzing recipe descriptions, tags, ingredient lists, and user reviews, our system understands individual preferences and generates tailored recommendations based on text-based input. Whether it's a specific flavor, dietary requirement, or ingredient, our system curates a selection of recipes that match the user's desires. The system's model is trained to extract meaningful insights from recipe data, capturing flavors, cooking techniques, and culinary characteristics. The recommendations are continuously refined based on user feedback and incorporate factors like popularity and diversity. With our system, users can discover new flavors, explore diverse cuisines, and enhance their culinary experiences.
+## Contents
+
+### data_preprocessing.ipynb
+This Jupyter notebook outlines the data preprocessing steps undertaken to clean and format the raw dataset. Key actions include converting 'id' columns to strings for ease of manipulation, handling missing values, removing duplicate rows, and extracting relevant information such as nutritional values and dietary preferences.
+
+### EDA.ipynb
+The Exploratory Data Analysis (EDA) Jupyter notebook presents insights gained from the preprocessed dataset. This notebook visualizes the distribution of nutritional values, explores correlations between variables, examines user ratings and interactions over time, and identifies popular dietary preferences and ingredients.
+
+### modelling.ipynb
+In this Jupyter notebook, we implement the content-based recommendation model, which addresses the "cold start" problem. The model leverages word embeddings for ingredient data and utilizes TF-IDF for text data, enabling us to provide relevant recipe recommendations based on users' preferences.
+
+### advanced_modelling.ipynb
+The "advanced_modelling" notebook presents the FunkSVD-based collaborative filtering approach. This model aims to personalize recommendations by incorporating user search history and ratings. It offers an enhanced user experience by suggesting recipes tailored to individual tastes.
+
+## Acknowledgment
+This project was developed as part of a data science capstone, and the code and insights presented here are solely for educational purposes. Feel free to explore and adapt the codebase to suit your specific use case or to contribute to the project's development. Happy cooking and happy coding!

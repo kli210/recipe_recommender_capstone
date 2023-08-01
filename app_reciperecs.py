@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import gensim.models.keyedvectors as word2vec
 import string
 import nltk
-nltk.download('stopwords')
+#nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 # Create a function for tokenizer
@@ -38,9 +38,9 @@ def recipe_tokenizer(sentence):
 # Function to load the combined embeddings and TF-IDF vectorizer model
 @st.cache_data(show_spinner=False)
 def load_embeddings_and_vectorizer():
-    with open('combined_embeddings.pkl', 'rb') as f:
+    with open('input/combined_embeddings.pkl', 'rb') as f:
         combined_embeddings = pickle.load(f)
-    with open('tfidf_vectorizer.pkl', 'rb') as f:
+    with open('input/tfidf_vectorizer.pkl', 'rb') as f:
         vectorizer = pickle.load(f)
     return combined_embeddings, vectorizer
 
@@ -80,7 +80,7 @@ def load_data(url):
     df = pd.read_pickle(url)
     return df
 
-sampled_data = load_data("sampled_data.pkl")
+sampled_data = load_data("input/sampled_data.pkl")
 
 # Define the app title and description
 st.title('TastyFinds :pancakes:')
@@ -100,7 +100,7 @@ def format_ingredients(ingredients_list):
 if st.button('Get Recommendations!'):
     
     # Add loading screen
-    loading_screen = st.image('cooking.gif', caption="Picking out deliciousness...")
+    loading_screen = st.image('input/cooking.gif', caption="Picking out deliciousness...")
     
     # Get recommendations based on user input
     recommended_recipes = find_similar_recipes(sampled_data, user_input, num_similar=5)
