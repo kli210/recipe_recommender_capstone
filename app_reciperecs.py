@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import gensim.models.keyedvectors as word2vec
 import string
 import nltk
-nltk.download('stopwords')
+#nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 # Create a function for tokenizer
