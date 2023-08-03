@@ -99,7 +99,7 @@ def format_ingredients(ingredients_list):
 def format_description(text:str):
     text.replace("[", "").replace("]", "").replace("'", "")
     text.capitalize()
-    return (text[:85] + '..') if len(text) > 85 else text
+    return (text[:77] + '..') if len(text) > 77 else text
 
 def format_name(text:str):
     return text.capitalize()
