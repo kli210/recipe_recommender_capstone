@@ -97,9 +97,9 @@ def format_ingredients(ingredients_list):
     return ingredients_list.replace("[", "").replace("]", "").replace("'", "")
 
 def format_description(text:str):
-    text.replace("[", "").replace("]", "").replace("'", "")
-    text.capitalize()
-    return (text[:77] + '..') if len(text) > 77 else text
+    info = text.replace("[", "").replace("]", "").replace("'", "")
+    cap = info.capitalize()
+    return (cap[:77] + '..') if len(cap) > 77 else cap
 
 def format_name(text:str):
     return text.capitalize()
