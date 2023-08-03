@@ -96,6 +96,13 @@ def format_ingredients(ingredients_list):
     # Remove the brackets and single quotes
     return ingredients_list.replace("[", "").replace("]", "").replace("'", "")
 
+def format_description(text:str):
+    text.replace("[", "").replace("]", "").replace("'", "").capitalize()
+    return (text[:75] + '..') if len(text) > 75 else text
+
+def format_name(text:str):
+    return text.capitalize()
+
 
 if st.button('Get Recommendations!'):
     
@@ -116,8 +123,9 @@ if st.button('Get Recommendations!'):
     selected_recipes.index += 1
     
     # Convert the list of ingredients into a comma-separated string
+    selected_recipes['name'] = selected_recipes['name'].apply(format_name)
     selected_recipes['ingredients'] = selected_recipes['ingredients'].apply(format_ingredients)
-    selected_recipes['description'] = selected_recipes['description'].apply(format_ingredients)
+    selected_recipes['description'] = selected_recipes['description'].apply(format_description)
 
     # Display the similar recipes in a table
     st.table(selected_recipes)
