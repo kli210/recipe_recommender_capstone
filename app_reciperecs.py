@@ -109,7 +109,7 @@ if st.button('Get Recommendations!'):
     loading_screen.empty()
     
     # Get the selected recipes from the sampled_data DataFrame
-    selected_recipes = sampled_data.loc[sampled_data['name'].isin(recommended_recipes), ['name', 'ingredients']]
+    selected_recipes = sampled_data.loc[sampled_data['name'].isin(recommended_recipes), ['name', 'description', 'ingredients']]
 
     # Reset the index of selected_recipes to start from 1
     selected_recipes.reset_index(drop=True, inplace=True)
@@ -117,6 +117,7 @@ if st.button('Get Recommendations!'):
     
     # Convert the list of ingredients into a comma-separated string
     selected_recipes['ingredients'] = selected_recipes['ingredients'].apply(format_ingredients)
+    selected_recipes['description'] = selected_recipes['description'].apply(format_ingredients)
 
     # Display the similar recipes in a table
     st.table(selected_recipes)
