@@ -100,10 +100,10 @@ Project Link: [https://github.com/kli210/recipe_recommender_capstone](https://gi
 
 I would like to extend my heartfelt gratitude to the following individuals and resources, whose support, guidance, and resources were instrumental in the successful completion of this project:
 
-- BrainStation Instructors & TAs: Thank you for your insightful guidance and continuous support throughout this project.
-- Food.com: The invaluable dataset posted on [Kaggle](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=PP_users.csv) served as the foundation of this project.
-- Online Communities: The vibrant communities on platforms like Stack Overflow, Reddit, and GitHub, where I found solutions to various challenges.
-- Friends and Family: My loved ones who offered encouragement and understanding during the ups and downs of this project.
+- **BrainStation Instructors & TAs**: Thank you for your insightful guidance and continuous support throughout this project.
+- **Food.com**: The invaluable dataset posted on [Kaggle](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=PP_users.csv) served as the foundation of this project.
+- **Online Communities**: The vibrant communities on platforms like Stack Overflow, Reddit, and GitHub, where I found solutions to various challenges.
+- **Friends and Family**: My loved ones who offered encouragement and understanding during the ups and downs of this project.
 
 Your contributions have greatly enriched this project, and I am truly grateful for your involvement.
 
