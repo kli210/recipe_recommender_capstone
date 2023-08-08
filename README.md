@@ -29,6 +29,10 @@
 
 This project aims to create an intelligent and personalized recipe recommendation system, catering to users' individual preferences and dietary needs. Leveraging advanced data science techniques like Word2Vec, Word Embeddings Neural Network, TF-IDF, and FunkSVD, the system provides users with enticing and relevant recipe suggestions, inspiring culinary creativity.
 
+<div id="header" align="center">
+    <img src="input/Tastyfinds.gif" alt="TastyFinds demo">
+</div>
+
 ### Built With
 
 - Python
