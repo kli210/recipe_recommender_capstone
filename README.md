@@ -109,6 +109,8 @@ Your contributions have greatly enriched this project, and I am truly grateful f
 
 Happy cooking and happy coding!
 
+<br>
+
 *Cheers,*
 
 *Kelly* c:
