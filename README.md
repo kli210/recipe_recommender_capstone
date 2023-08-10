@@ -93,7 +93,7 @@ Instantly receive the top 5 vegetarian dishes that closely align with your reque
 
 <br>
 
-Whether you're looking for a quick weeknight meal or aiming to impress with a gourmet creation, our Recipe Recommender is your sous chef in the digital world. Experience the ease of finding recipes that match your cravings and preferences like never before!
+Whether you're looking for a quick weeknight meal or aiming to impress with a gourmet creation, this Recipe Recommender is your sous chef in the digital world. Experience the ease of finding recipes that match your cravings and preferences like never before! Try it out [here](https://kellyli-tastyfinds.streamlit.app/).
 
 ## Roadmap
 
