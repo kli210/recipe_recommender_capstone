@@ -17,7 +17,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#what-did-i-learn">What Did I Learn?</a></li>
+    <li><a href="#challenges-faced">Challenges Faced</a></li>
+    <li><a href="#future-directions">Future Directions</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -95,12 +97,34 @@ Instantly receive the top 5 vegetarian dishes that closely align with your reque
 
 Whether you're looking for a quick weeknight meal or aiming to impress with a gourmet creation, this Recipe Recommender is your sous chef in the digital world. Experience the ease of finding recipes that match your cravings and preferences like never before! Try it out [here](https://kellyli-tastyfinds.streamlit.app/).
 
-## Roadmap
+## What Did I Learn?
 
-Future enhancements to the project could include:
+Throughout this capstone project, I gained valuable insights into various aspects of data science:
 
-- Incorporating user search history and ratings for more personalized recommendations using collaborative filtering (FunkSVD).
-- Scraping URLs to link recipes, providing users with convenient access to recipe details.
+- **Feature Engineering**: I learned the importance of feature engineering in preparing data for modeling. Creating new columns for nutritional values and dietary preferences significantly impacted the model's performance.
+
+- **Dealing with Outliers, Duplicates, and Missing Values**: Managing outliers, duplicates, and missing values was a critical part of data preprocessing. I gained proficiency in handling these challenges effectively to ensure accurate results.
+
+- **Advanced Modeling Techniques**: Implementing techniques like TF-IDF, word embeddings, word2vec, and FunkSVD enhanced my understanding of how these methods improve recommendation systems.
+
+## Challenges Faced
+
+The journey wasn't without challenges:
+
+1. **Data Accessibility and Quality**: Accessing relevant data and dealing with missing information like serving sizes and recipe URLs presented hurdles.
+
+2. **Limited Computational Resources**: Working with large datasets on limited resources required using smaller subsets for local modeling.
+
+## Future Directions
+
+Looking ahead, I have several plans to enhance this project:
+
+- Implement FunkSVD for returning users to personalize recommendations further.
+- Incorporate missing parameters like serving sizes and recipe URLs.
+- Extend the model with numerical features like nutritional values and recipe complexity.
+- Explore collaborative filtering and hybrid models for improved accuracy.
+- Deploy the recommendation system on a cloud platform.
+- Collaborate with data enthusiasts to expand and refine the project.
 
 ## Contributing
 
@@ -108,9 +132,11 @@ Contributions are warmly welcomed! If you have any suggestions, ideas, or improv
 
 ## Contact
 
-Kelly Li - kellyli210.kl@gmail.com
+Kelly Li - [kellyli210.kl@gmail.com](mailto:kellyli210.kl@gmail.com)
 
 Project Link: [https://github.com/kli210/recipe_recommender_capstone](https://github.com/kli210/recipe_recommender_capstone)
+
+My personal website: [https://kelly-li.netlify.app/](https://kelly-li.netlify.app/)
 
 ### Acknowledgments
 
