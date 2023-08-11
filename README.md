@@ -98,34 +98,39 @@ Instantly receive the top 5 vegetarian dishes that closely align with your reque
 
 Whether you're looking for a quick weeknight meal or aiming to impress with a gourmet creation, this Recipe Recommender is your sous chef in the digital world. Experience the ease of finding recipes that match your cravings and preferences like never before! Try it out [here](https://kellyli-tastyfinds.streamlit.app/).
 
-## What Did I Learn?
+### What Did I Learn?
 
-Throughout this capstone project, I gained valuable insights into various aspects of data science:
+During this capstone project, I gained valuable insights and skills in various aspects of data science and machine learning:
 
-- **Feature Engineering**: I learned the importance of feature engineering in preparing data for modeling. Creating new columns for nutritional values and dietary preferences significantly impacted the model's performance.
+- **Data Preprocessing and Feature Engineering**: I learned how essential data preprocessing and feature engineering are in creating a solid foundation for machine learning models. This involved handling outliers, duplicated entries, and missing values, and transforming raw data into a usable format.
 
-- **Dealing with Outliers, Duplicates, and Missing Values**: Managing outliers, duplicates, and missing values was a critical part of data preprocessing. I gained proficiency in handling these challenges effectively to ensure accurate results.
+- **Exploratory Data Analysis (EDA)**: Through exploratory data analysis, I discovered the power of visualizations to uncover trends, correlations, and insights within the data. This step provided valuable context for building effective recommendation models.
 
-- **Advanced Modeling Techniques**: Implementing techniques like TF-IDF, word embeddings, word2vec, and FunkSVD enhanced my understanding of how these methods improve recommendation systems.
+- **Machine Learning Techniques**: I employed a range of machine learning techniques, including content-based modeling using word embeddings and TF-IDF. This allowed me to understand how models learn from text data and make recommendations based on user input.
 
-## Challenges Faced
+- **Collaborative Filtering and Personalization**: Implementing the FunkSVD-based collaborative filtering model taught me about personalized recommendations. By incorporating user search history and ratings, I understood how to create a more tailored user experience.
 
-The journey wasn't without challenges:
+- **Deployment with Streamlit**: I successfully deployed my recommendation models using Streamlit, enabling users to interact with the models through a user-friendly web application. This experience broadened my understanding of deploying machine learning projects for real-world use.
 
-1. **Data Accessibility and Quality**: Accessing relevant data and dealing with missing information like serving sizes and recipe URLs presented hurdles.
+### Challenges Faced
 
-2. **Limited Computational Resources**: Working with large datasets on limited resources required using smaller subsets for local modeling.
+While working on this project, I encountered a few challenges that further enhanced my problem-solving skills:
 
-## Future Directions
+1. **Data Collection and Quality**: Finding and accessing the right data, including dealing with missing values and outliers, underscored the importance of data quality for accurate analysis and modeling.
 
-Looking ahead, I have several plans to enhance this project:
+2. **Computational Limitations**: Handling large volumes of data on a local machine presented computational challenges. This required me to strategically sample data for local analysis and modeling.
 
-- Implement FunkSVD for returning users to personalize recommendations further.
-- Incorporate missing parameters like serving sizes and recipe URLs.
-- Extend the model with numerical features like nutritional values and recipe complexity.
-- Explore collaborative filtering and hybrid models for improved accuracy.
-- Deploy the recommendation system on a cloud platform.
-- Collaborate with data enthusiasts to expand and refine the project.
+### Future Directions
+
+Looking ahead, there are exciting possibilities to build upon this project:
+
+- Implementing Funksvd for returning users to enhance personalization.
+- Including URLs to recipes for users to access recipe details.
+- Incorporating more parameters into the recommendation model, such as nutritional values and recipe complexity.
+- Exploring advanced deep learning techniques for text data analysis.
+- Scaling the project to handle larger datasets using cloud-based resources.
+
+Through this capstone project, I not only honed my technical skills but also gained a deeper understanding of the entire data science process, from data collection and preprocessing to modeling and deployment. This experience has been invaluable in preparing me for real-world data science challenges.
 
 ## License
 
