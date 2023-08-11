@@ -21,6 +21,7 @@
     <li><a href="#challenges-faced">Challenges Faced</a></li>
     <li><a href="#future-directions">Future Directions</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -125,6 +126,10 @@ Looking ahead, I have several plans to enhance this project:
 - Explore collaborative filtering and hybrid models for improved accuracy.
 - Deploy the recommendation system on a cloud platform.
 - Collaborate with data enthusiasts to expand and refine the project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
 
 ## Contributing
 
