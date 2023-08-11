@@ -104,7 +104,7 @@ Future enhancements to the project could include:
 
 ## Contributing
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+Contributions are warmly welcomed! If you have any suggestions, ideas, or improvements that would enhance this project, please don't hesitate to get involved. Feel free to open an issue to discuss your thoughts or submit a pull request with your proposed changes. Your valuable input can help make this project even better.
 
 ## Contact
 
