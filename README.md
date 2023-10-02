@@ -51,11 +51,13 @@ This project aims to create an intelligent and personalized recipe recommendatio
 - Streamlit
 
 ## Contents
+### Main Files: Project Structure
 
-1. [data_preprocessing.ipynb](https://github.com/kli210/recipe_recommender_capstone/blob/main/data_preprocessing.ipynb)
-2. [EDA.ipynb](https://github.com/kli210/recipe_recommender_capstone/blob/main/EDA.ipynb)
-3. [modelling.ipynb](https://github.com/kli210/recipe_recommender_capstone/blob/main/modelling.ipynb)
-4. [advanced_modelling.ipynb](https://github.com/kli210/recipe_recommender_capstone/blob/main/advanced_modelling.ipynb)
+1. [Data Preprocessing](https://github.com/kli210/recipe_recommender_capstone/blob/main/data_preprocessing.ipynb)
+2. [EDA](https://github.com/kli210/recipe_recommender_capstone/blob/main/EDA.ipynb)
+3. [Modelling](https://github.com/kli210/recipe_recommender_capstone/blob/main/modelling.ipynb)
+4. [Advanced Modelling](https://github.com/kli210/recipe_recommender_capstone/blob/main/advanced_modelling.ipynb)
+5. [Web App](https://github.com/kli210/recipe_recommender_capstone/blob/main/app_reciperecs.py)
 
 ## Getting Started
 
